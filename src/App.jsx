@@ -9,6 +9,9 @@ import ProductSection from './components/ProductSection/ProductSection'
 import FeaturedLogos from './components/FeaturedLogos/FeaturedLogos'
 import PlumpKits from './components/PlumpKits/PlumpKits'
 import PlumpCard from './components/PlumpCard.jsx/PlumpCard'
+import ProjectShowcase from './components/ProjectShowcase/ProjectShowcase'
+import Footer from './components/Footer/Footer'
+import VipSignup from './components/VipSignup/VipSignUp'
 
 function App() {
   return (
@@ -22,7 +25,9 @@ function App() {
       <FeaturedLogos/>
       <PlumpKits/>
       <PlumpCard/>
-      {/* <Footer/> */}
+      <ProjectShowcase/>
+      <VipSignup/>
+      <Footer/>
       
     </div>
   )
