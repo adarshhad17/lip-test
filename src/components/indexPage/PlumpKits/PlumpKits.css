@@ -12,22 +12,33 @@
 
 .kits-scroll {
   display: flex;
-  gap: 20px;
+  gap: 30px; /* <-- Change this value to increase/decrease gap */
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding-bottom: 10px;
 }
 
-.kit-card {
+.kit-block {
   flex: 0 0 auto;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kit-card {
+  margin-left: 20px;
+  width: 320px; /* Increased size */
+  height: 520px; /* Square image card */
   border: 1px solid #ff4c00;
   border-radius: 20px;
-  padding: 20px;
-  width: 280px;
   background: #fff;
   position: relative;
-  scroll-snap-align: start;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .discount-badge {
@@ -42,22 +53,23 @@
   border-radius: 20px;
 }
 
-.kit-images {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.kit-image img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
 }
 
-.kit-images img {
-  height: 100px;
-  object-fit: contain;
+.kit-info {
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 320px;
 }
 
 .kit-info h3 {
   font-weight: 700;
   margin-bottom: 5px;
+  font-size: 1.1rem;
 }
 
 .kit-info p {
@@ -69,6 +81,7 @@
 .kit-prices {
   display: flex;
   gap: 10px;
+  justify-content: center;
   align-items: center;
 }
 
@@ -88,11 +101,15 @@
   }
 
   .kit-card {
-    width: 240px;
-    padding: 16px;
+    width: 260px;
+    height: 260px;
   }
 
-  .kit-images img {
-    height: 80px;
+  .kit-info {
+    max-width: 260px;
+  }
+
+  .kit-image img {
+    height: 80%;
   }
 }

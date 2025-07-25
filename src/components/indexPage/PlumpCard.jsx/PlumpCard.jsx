@@ -1,6 +1,5 @@
-import React from 'react';
 import './PlumpCard.css';
-import image from '../../assets/plum.png'; // Rename your image to 'plump.jpg' and place it in the same folder
+import image from '../../../assets/plum.png'; // Rename your image to 'plump.jpg' and place it in the same folder
 
 const PlumpCard = () => {
   return (

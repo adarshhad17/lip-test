@@ -1,8 +1,7 @@
-import React from "react";
 import "./PlumpKits.css";
-import one from "../../assets/one.png";
-import two from "../../assets/two.png";
-import three from "../../assets/three.png";
+import one from "../../../assets/one.png";
+import two from "../../../assets/two.png";
+import three from "../../../assets/three.png";
 
 const kits = [
   {
@@ -49,10 +48,12 @@ const PlumpKits = () => {
       <h1 className="plump-title">PLUMPING KITS</h1>
       <div className="kits-scroll">
         {kits.map((kit) => (
-          <div className="kit-card" key={kit.id}>
-            <div className="discount-badge">{kit.discount}</div>
-            <div className="kit-image">
-              <img src={kit.image} alt={kit.title} />
+          <div className="kit-block" key={kit.id}>
+            <div className="kit-card">
+              <div className="discount-badge">{kit.discount}</div>
+              <div className="kit-image">
+                <img src={kit.image} alt={kit.title} />
+              </div>
             </div>
             <div className="kit-info">
               <h3>{kit.title}</h3>

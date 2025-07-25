@@ -1,6 +1,6 @@
 import React from "react";
 import "./SwatchStrip.css"; // CSS code below goes here
-import imagefull from '../../assets/image-horizontal.png'
+import imagefull from '../../../assets/image-horizontal.png'
 
 const SwatchStrip = () => {
   return (

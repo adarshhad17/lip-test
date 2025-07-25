@@ -1,6 +1,9 @@
 import React from "react";
 import "./Footer.css";
 
+// Importing icons from react-icons
+import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa6"; // You can also use other versions
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -36,9 +39,9 @@ const Footer = () => {
 
         {/* Social Media Icons */}
         <div className="footer-social">
-          <i className="bi bi-meta" />
-          <i className="bi bi-instagram" />
-          <i className="bi bi-tiktok" />
+          <FaFacebook />
+          <FaInstagram />
+          <FaTiktok />
         </div>
       </div>
     </footer>

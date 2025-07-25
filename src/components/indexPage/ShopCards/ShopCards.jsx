@@ -1,9 +1,9 @@
 import React from "react";
 import "./ShopCards.css";
 
-import lip from '../../assets/lip.webp';
-import face from '../../assets/face.webp';
-import lip2 from '../../assets/lip-2.webp';
+import lip from '../../../assets/lip.webp';
+import face from '../../../assets/face.webp';
+import lip2 from '../../../assets/lip-2.webp';
 
 const cards = [
   { title: "LIP", image: lip },

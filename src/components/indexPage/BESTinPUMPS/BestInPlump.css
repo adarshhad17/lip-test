@@ -1,7 +1,6 @@
 .plump-container {
   padding: 40px 20px;
   position: relative;
-  
 }
 
 .plump-header {
@@ -29,21 +28,33 @@
   cursor: pointer;
 }
 
+/* Wrapper that cancels out padding for scroll area */
+.scroll-wrapper-outer {
+  margin-left: -20px;
+  padding-left: 0;
+  overflow-x: hidden;
+}
+
+/* Scroll wrapper */
 .plump-scroll-wrapper {
-  overflow: hidden;
-  position: relative;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding: 0;
+  margin: 0;
+}
+
+.plump-scroll-wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .plump-scroll {
   display: flex;
+  flex-wrap: nowrap;
   gap: 24px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding-bottom: 20px;
-}
-
-.plump-scroll::-webkit-scrollbar {
-  display: none;
+  scroll-snap-type: x mandatory;
+  padding: 0;
+  margin: 0;
 }
 
 .main-card {
@@ -53,6 +64,7 @@
   border-radius: 20px;
   overflow: hidden;
   position: relative;
+  scroll-snap-align: start;
 }
 
 .main-card img {
@@ -76,12 +88,13 @@
   cursor: pointer;
 }
 
-.product-card {
+.product-cardd {
   flex: 0 0 auto;
   width: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  scroll-snap-align: start;
 }
 
 .product-img-box {
@@ -136,36 +149,23 @@
   border-radius: 50%;
 }
 
-/* Mobile responsiveness */
+/* Responsive */
 @media (max-width: 768px) {
-  .plump-header {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
   .plump-heading {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   .scroll-arrow {
     display: none;
   }
 
-  .plump-scroll {
-    scroll-snap-type: x mandatory;
-  }
-
   .main-card,
-  .product-card {
-    flex: 0 0 100vw;
-    scroll-snap-align: start;
-    padding: 10px;
-    box-sizing: border-box;
+  .product-cardd {
+    width: 80vw;
   }
 
   .product-img-box {
     height: 400px;
-    border: none;
   }
 
   .shop-all-btn {

@@ -1,6 +1,6 @@
 import React from "react";
 import "./HeroSection.css";
-import modelImg from "../../assets/Hero.webp";
+import modelImg from "../../../assets/Hero.webp";
 
 const HeroSection = () => {
   return (
