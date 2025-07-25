@@ -14,7 +14,7 @@
 .feature-strip {
   display: inline-flex;
   gap: 2rem;
-  padding: 0 1rem;
+  padding: 15px 20px;
 }
 
 .feature-item {
@@ -30,4 +30,20 @@
   font-size: 2rem;
   color: rgba(255, 128, 0, 0.2);
   margin-right: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .feature-item {
+    font-size: 1rem; /* Smaller font size on mobile */
+  }
+
+  .feature-item .dot {
+    font-size: 1rem;
+    margin-right: 0.5rem; /* Adjust spacing for smaller screens */
+  }
+
+  .feature-strip {
+    gap: 1rem;
+    padding: 10px 15px;
+  }
 }

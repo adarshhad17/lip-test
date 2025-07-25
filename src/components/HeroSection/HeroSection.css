@@ -1,75 +1,112 @@
-.main-hero {
+.hero-container {
+  height: 100vh;
+  font-family: 'Helvetica Neue', sans-serif;
+  overflow: hidden;
   display: flex;
-  align-items: flex-end; /* ✅ Align contents to the bottom */
-  justify-content: space-between;
-  background-color: white;
-  border: 1px solid #ff5000; /* Orange border */
-  height: auto; /* Responsive height */
-  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 0;
+  border: 1px solid #ff4b00;
   border-radius: 20px;
-  
-  flex-wrap: wrap;
+  margin: 25px;
 }
 
-
-.text-hero {
-  flex: 1 1 400px;
-  padding: 1rem;
+.hero-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
-.text-hero h1 {
-  font-size: 2rem;
-  color: #ff5000;
-  font-weight: 800;
-  margin-bottom: 0.5rem;
+.text-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
-.text-hero p {
-  font-size: 1rem;
+.text-section h1 {
+  font-size: 65px;
+  color: #ff4b00;
+  font-weight: 1000;
+  margin-bottom: 10px;
+}
+
+.text-section p {
+  font-size: 20px;
   color: #333;
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
 }
 
-.text-hero button {
-  padding: 0.5rem 1.2rem;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: #ff5000;
-  border: 2px solid #ff5000;
-  background-color: transparent;
-  border-radius: 2rem;
+.shop-btn {
+  padding: 10px 10px;
+  border: 2px solid #f58758;
+  color: #ff4b00;
+  border-radius: 20px;
+  font-weight: 900;
   cursor: pointer;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
+  width: 250px;
+  background: #fff;
 }
 
-.text-hero button:hover {
-  background-color: #ff5000;
-  color: white;
+.image-section {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
 }
 
-/* Optional image container for future use */
-.img-hero {
-  flex: 1 1 300px;
-  padding: 1rem;
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateX(-60px);
 }
 
-/* Responsive design */
+/* Responsive */
 @media (max-width: 768px) {
-  .main-hero {
+  .hero-container {
+    margin: 10px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .hero-content {
     flex-direction: column;
+    height: auto;
+  }
+
+  .text-section {
+    padding: 20px;
+    align-items: center;
     text-align: center;
   }
 
-  .text-hero h1 {
-    font-size: 1.5rem;
+  .text-section h1 {
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 1.2;
   }
 
-  .text-hero p {
-    font-size: 0.95rem;
+  .text-section p {
+    font-size: 16px;
   }
 
-  .text-hero button {
+  .shop-btn {
     width: 100%;
+    max-width: 220px;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .image-section {
+    height: 50vh;
+  }
+
+  .image-section img {
+    transform: translateX(0);
+    object-position: center;
   }
 }

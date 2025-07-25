@@ -1,28 +1,31 @@
-import React from 'react';
+import React from "react";
 import "./HeroSection.css";
-import hero from '../../assets/Hero.webp';
+import modelImg from "../../assets/Hero.webp";
 
-function HeroSection() {
+const HeroSection = () => {
   return (
-    <div className="main-hero">
-      {/* -------text-------- */}
-      <div className="text-hero">
-        <h1 className="hero-heading">
-          BIG LIPS,<br />BIGGER ENERGY
-        </h1>
-        <p className="hero-description">
-          Our famous lip liner lines, fills and plumps so you can cheat <br />
-          your way to an instant lip lift.
-        </p>
-        <button className="hero-btn">SHOP PLUMP & FILL</button>
-      </div>
+    <div className="hero-container">
+      <div className="hero-content">
+        {/* Left Side: Text */}
+        <div className="text-section">
+          <h1>
+            BIG LIPS,<br />
+            BIGGER ENERGY
+          </h1>
+          <p>
+            Our famous lip liner lines, fills and plumps so you can cheat <br />
+            your way to an instant lip lift.
+          </p>
+          <button className="shop-btn">SHOP PLUMP & FILL</button>
+        </div>
 
-      {/* -----------image--------- */}
-      <div className="img-hero">
-        <img src={hero} alt="hero" />
+        {/* Right Side: Image */}
+        <div className="image-section">
+          <img src={modelImg} alt="Model" />
+        </div>
       </div>
     </div>
   );
-}
+};
 
 export default HeroSection;
