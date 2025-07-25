@@ -1,0 +1,96 @@
+.featured-section {
+  background-color: #fffdf9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.featured-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.logo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px 60px;
+}
+
+.logo-text {
+  font-size: 28px;
+  color: #ff4c00;
+  font-family: 'Georgia', serif;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+/* MailOnline custom styling */
+.mailonline .mail {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.mailonline .online {
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+/* this morning custom styling */
+.thismorning .this {
+  font-family: Arial, sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+.thismorning .morning {
+  font-family: Georgia, serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+/* ✅ Responsive adjustments */
+@media (max-width: 768px) {
+  .logo-grid {
+    gap: 30px 30px;
+  }
+
+  .logo-text {
+    font-size: 22px;
+  }
+
+  .mailonline .mail {
+    font-size: 24px;
+  }
+
+  .mailonline .online {
+    font-size: 22px;
+  }
+
+  .thismorning .this {
+    font-size: 18px;
+  }
+
+  .thismorning .morning {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 20px;
+  }
+
+  .mailonline .mail,
+  .mailonline .online,
+  .thismorning .this,
+  .thismorning .morning {
+    font-size: 20px;
+  }
+}

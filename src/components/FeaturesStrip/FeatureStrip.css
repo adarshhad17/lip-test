@@ -1,0 +1,33 @@
+.feature-strip-wrapper {
+    margin-top: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: #fefdfb;
+  padding: 1rem 0;
+  scrollbar-width: none; /* Firefox */
+}
+
+.feature-strip-wrapper::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.feature-strip {
+  display: inline-flex;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.feature-item {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  color: #ff5000;
+  font-size: 2rem;
+  white-space: nowrap;
+}
+
+.feature-item .dot {
+  font-size: 2rem;
+  color: rgba(255, 128, 0, 0.2);
+  margin-right: 0.9rem;
+}

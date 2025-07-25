@@ -1,0 +1,117 @@
+.plump-section {
+  display: flex;
+  
+  padding: 40px;
+
+}
+
+
+/* Left Card */
+.left-card {
+  position: relative;
+  width: 600px;
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.lip-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+}
+
+/* Text overlay on image */
+.text-overlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  z-index: 2;
+}
+
+.tag {
+  background-color: orange;
+  display: inline-block;
+  padding: 4px 12px;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.headline {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* Right Card */
+.right-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  padding: 20px;
+  width: 650px;
+  height: 450px;
+  position: relative;
+  text-align: center;
+}
+
+.gloss-image {
+  width: 100px;
+  height: auto;
+  margin: 0 auto 20px;
+}
+
+.product-info h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.product-info p {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.price {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.add-btn {
+  margin-top: 10px;
+  border: 2px solid orange;
+  background: none;
+  padding: 10px 20px;
+  color: orange;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.arrow-btn {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: none;
+  color: orange;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .plump-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-card,
+  .right-card {
+    width: 90%;
+  }
+}

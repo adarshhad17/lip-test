@@ -1,0 +1,32 @@
+.image-scroll-container {
+  width: 90%;
+  overflow-x: auto;
+  display: flex;
+  margin-left: 100px;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+}
+
+.image-card {
+  flex: 0 0 90%;
+  height: 90%;
+  scroll-snap-align: start;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image-content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .image-card {
+    height: 180px;
+    flex: 0 0 90%;
+  }
+}
