@@ -1,7 +1,7 @@
 .hero-container {
   height: 100vh;
   font-family: 'Helvetica Neue', sans-serif;
-  display: flex;
+ 
   align-items: center;
   justify-content: center;
   background: #fff;
@@ -15,6 +15,8 @@
   display: flex;
   width: 100%;
   height: 100%;
+  position: relative;
+  bottom: 6.5rem;
 }
 
 .text-section {

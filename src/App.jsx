@@ -10,10 +10,12 @@ import PlumpCard from './components/indexPage/PlumpCard.jsx/PlumpCard'
 import ProjectShowcase from './components/indexPage/ProjectShowcase/ProjectShowcase'
 import Footer from './components/LayOut/Footer/Footer'
 import VipSignup from './components/LayOut/VipSignup/VipSignUp'
+import Header from './components/LayOut/Header/Header'
 
 function App() {
   return (
     <div>
+    
       <HerSection/>
       <ShopCards/>
       <FeatureStrip/>

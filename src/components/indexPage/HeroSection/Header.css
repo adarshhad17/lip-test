@@ -11,27 +11,43 @@
   font-size: 14px;
   border-radius: 10px;
   margin: 10px 0;
+  position: relative;
+  z-index: 1;
+  width: 90%;
+  margin: 9px auto;
 }
 
 .top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 1;
+  width: 85%;
+  margin: o auto;
+  margin-left: 80px;
 }
 
 .nav-left,
 .nav-right {
   display: flex;
   gap: 10px;
-
 }
 
-.nav-left button,
-.nav-right button {
+.nav-left button{
   padding: 8px 16px;
   border: 1px solid #ff4b00;
   border-radius: 20px;
   background: white;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+.nav-right button {
+  padding: 8px 16px;
+  border: 1px solid #ff4b00;
+  border-radius: 20px;
+  background: transparent;
   font-weight: bold;
   cursor: pointer;
 }
@@ -55,4 +71,17 @@
   .nav-right {
     gap: 5px;
   }
+  .top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  width: 85%;
+  margin: o auto;
+  margin-left: 0px;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
 }

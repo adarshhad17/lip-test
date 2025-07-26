@@ -61,7 +61,7 @@
   justify-content: center;
   gap: 2.5rem;
   padding: 2rem;
-  flex-wrap: wrap;
+  
   box-sizing: border-box;
 }
 
@@ -203,6 +203,7 @@
     height: 300px;
     flex-direction: column;
   }
+  
 
   .product-imgg {
     height: 100%;
@@ -214,4 +215,16 @@
     padding: 1rem;
   }
   
+}
+@media (max-width: 768px) {
+  .static-wrapper {
+    flex-direction: column; /* Stack vertically on mobile */
+    align-items: center;    /* Center items */
+    padding: 1rem;
+  }
+
+  .product-card {
+    height: auto;         /* Let height grow based on content */
+    max-width: 100%;      /* Full width on mobile */
+  }
 }

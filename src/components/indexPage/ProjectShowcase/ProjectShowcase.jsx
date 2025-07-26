@@ -1,6 +1,6 @@
 import './ProjectShowcase.css';
 
-import za from '../../../assets/za.png'
+import za from '../../../assets/za.png';
 import zb from '../../../assets/zb.png';
 import zc from '../../../assets/zc.png';
 import zd from '../../../assets/zd.png';
@@ -10,7 +10,7 @@ import zg from '../../../assets/za.png';
 import zh from '../../../assets/zb.png';
 import zi from '../../../assets/zc.png';
 
-const images = [za, zb, zc,zd,ze,zf,zg,zh,zi];
+const images = [za, zb, zc, zd, ze, zf, zg, zh, zi];
 
 const ProjectShowcase = () => {
   return (
@@ -23,7 +23,7 @@ const ProjectShowcase = () => {
       <div className="card-row">
         {images.map((img, idx) => (
           <div className="card" key={idx}>
-            <img src={img} alt={`person-${idx}`} />
+            <img src={img} alt={`project-${idx}`} />
           </div>
         ))}
       </div>

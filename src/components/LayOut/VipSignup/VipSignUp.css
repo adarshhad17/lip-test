@@ -10,6 +10,8 @@
   flex-wrap: wrap;
   gap: 20px;
   background: #fff;
+  position: relative;
+    top: 4rem;
 }
 
 .vip-left {
@@ -88,8 +90,11 @@
 
 @media (max-width: 480px) {
   .vip-container {
-    margin-left: 10px;
+    margin-left: 24px;
     padding: 25px 15px;
+    position: relative;
+    top: 4rem;
+    
   }
 
   .vip-left h2 {
