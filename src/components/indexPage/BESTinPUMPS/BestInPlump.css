@@ -29,7 +29,7 @@
 
 /* Main Card */
 .main-card {
-  width: 320px;
+  width: 360px;
   height: 600px;
   position: relative;
   border-radius: 20px;
@@ -46,7 +46,7 @@
 .shop-button {
   position: absolute;
   bottom: 20px;
-  left: 20px;
+  left: px;
   background: transparent;
   color: white;
   border: 2px solid white;
@@ -126,9 +126,16 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .card-scroll-container {
+    gap: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .main-card,
   .product-box {
-    width: 260px;
+    width: 100%;
+    flex: 0 0 100%; /* Take full container width and keep scroll behavior */
   }
 
   .main-card {
@@ -138,4 +145,31 @@
   .product-image-wrapper {
     height: 320px;
   }
+
+  .shop-button {
+    width: 80%;
+    left: 10%;
+  }
+
+  .product-details {
+    padding: 0.6rem 0.5rem 0;
+  }
+
+  .product-title {
+    font-size: 0.95rem;
+  }
+
+  .product-desc {
+    font-size: 0.8rem;
+  }
+
+  .product-price {
+    font-size: 0.85rem;
+  }
+
+  .variant-dot {
+    width: 8px;
+    height: 8px;
+  }
 }
+
