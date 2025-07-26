@@ -2,11 +2,37 @@
   padding: 2rem;
 }
 
+.bestin-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .bestin-heading {
   font-size: 3.5rem;
   color: #ff471a;
   font-weight: bold;
   margin-bottom: 1rem;
+}
+
+.scroll-arrow-header {
+  background: #fff;
+  color: #ff471a;
+  border: 1px solid #ff471a;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.scroll-arrow-header:hover {
+  background: #ff471a;
+  color: white;
 }
 
 .card-scroll-container {
@@ -17,15 +43,13 @@
   -webkit-overflow-scrolling: touch;
   padding-bottom: 2rem;
 
-  /* Hide scrollbar */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .card-scroll-container::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none;
 }
-
 
 /* Main Card */
 .main-card {
@@ -46,7 +70,7 @@
 .shop-button {
   position: absolute;
   bottom: 20px;
-  left: px;
+  left: 10%;
   background: transparent;
   color: white;
   border: 2px solid white;
@@ -135,7 +159,7 @@
   .main-card,
   .product-box {
     width: 100%;
-    flex: 0 0 100%; /* Take full container width and keep scroll behavior */
+    flex: 0 0 100%;
   }
 
   .main-card {
@@ -171,5 +195,10 @@
     width: 8px;
     height: 8px;
   }
-}
 
+  .scroll-arrow-header {
+    width: 32px;
+    height: 32px;
+    font-size: 1.1rem;
+  }
+}

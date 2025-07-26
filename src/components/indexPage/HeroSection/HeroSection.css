@@ -1,7 +1,6 @@
 .hero-container {
   height: 100vh;
   font-family: 'Helvetica Neue', sans-serif;
-  /* overflow: hidden; */ /* ❌ removed to fix button visibility */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,7 +68,7 @@
   transform: translateX(-60px);
 }
 
-/* ---- Mobile Styles ---- */
+/* -------------------------------Mobile Styles ---- */
 @media (max-width: 768px) {
   .hero-container {
     margin: 0;
@@ -104,11 +103,12 @@
 
   .shop-btn {
     width: 100%;
-    max-width: 220px;
-    padding: 12px 15px;
+    max-width: 180px;
+    padding: 8px 10px;
     font-size: 15px;
     color: #ff4b00;
-    background: black;
+      background: #fff;
+
     border: 2px solid #ff4b00;
     border-radius: 20px;
     margin-top: 20px;

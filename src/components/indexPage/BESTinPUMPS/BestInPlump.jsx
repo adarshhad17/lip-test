@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./BestInPlump.css";
 
 import main from "../../../assets/main.png";
@@ -34,10 +34,22 @@ const products = [
 ];
 
 const BestInPlump = () => {
+  const scrollRef = useRef();
+
+  const scrollRight = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: 400, behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="bestin-wrapper">
-      <h2 className="bestin-heading">BEST IN PLUMP</h2>
-      <div className="card-scroll-container">
+      <div className="bestin-header-row">
+        <h2 className="bestin-heading">BEST IN PLUMP</h2>
+        <button className="scroll-arrow-header" onClick={scrollRight}>➜</button>
+      </div>
+
+      <div className="card-scroll-container" ref={scrollRef}>
         {/* Main Card */}
         <div className="main-card">
           <img src={main} alt="Main" className="main-img" />
@@ -63,7 +75,9 @@ const BestInPlump = () => {
                       style={{ backgroundColor: color }}
                     />
                   ))}
-                  {product.variants.length > 6 && <span className="variant-more">+{product.variants.length - 6}</span>}
+                  {product.variants.length > 6 && (
+                    <span className="variant-more">+{product.variants.length - 6}</span>
+                  )}
                 </div>
               )}
             </div>

@@ -1,14 +1,12 @@
 import React from "react";
 import "./Footer.css";
 
-// Importing icons from react-icons
-import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa6"; // You can also use other versions
+import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa6"; 
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* SHOP Section */}
         <div className="footer-section">
           <h4 className="footer-title">SHOP</h4>
           <ul>
@@ -19,7 +17,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* ABOUT Section */}
         <div className="footer-section">
           <h4 className="footer-title">ABOUT</h4>
           <ul>
@@ -28,7 +25,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* HELP Section */}
         <div className="footer-section">
           <h4 className="footer-title">HELP</h4>
           <ul>
@@ -37,7 +33,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Social Media Icons */}
         <div className="footer-social">
           <FaFacebook />
           <FaInstagram />

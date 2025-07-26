@@ -82,7 +82,7 @@
   color: white;
 }
 
-/* Responsive */
+/* ---------------------------------mobilee*/
 @media (max-width: 768px) {
   .plump-container {
     flex-direction: row;

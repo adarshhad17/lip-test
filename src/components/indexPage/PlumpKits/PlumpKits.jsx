@@ -45,7 +45,10 @@ const kits = [
 const PlumpKits = () => {
   return (
     <div className="plump-wrapper">
-      <h1 className="plump-title">PLUMPING KITS</h1>
+      <div className="plump-header">
+        <h1 className="plump-title">PLUMPING KITS</h1>
+        <button className="shop-all-btn">SHOP ALL KITS</button>
+      </div>
       <div className="kits-scroll">
         {kits.map((kit) => (
           <div className="kit-block" key={kit.id}>

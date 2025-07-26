@@ -3,17 +3,39 @@
   background-color: #fffdf9;
 }
 
+.plump-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px 20px 20px;
+}
+
 .plump-title {
   color: #ff4c00;
   font-size: 56px;
-  margin-left: 20px;
   font-weight: bold;
-  margin-bottom: 20px;
+}
+
+.shop-all-btn {
+  background-color: transparent;
+  border: 2px solid #ff4c00;
+  color: #ff4c00;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+.shop-all-btn:hover {
+  background-color: #ff4c00;
+  color: white;
 }
 
 .kits-scroll {
   display: flex;
-  gap: 30px; /* <-- Change this value to increase/decrease gap */
+  gap: 30px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding-bottom: 10px;
@@ -29,8 +51,8 @@
 
 .kit-card {
   margin-left: 20px;
-  width: 320px; /* Increased size */
-  height: 520px; /* Square image card */
+  width: 320px;
+  height: 520px;
   border: 1px solid #ff4c00;
   border-radius: 20px;
   background: #fff;
@@ -96,21 +118,42 @@
   color: #888;
 }
 
+
+/* ------------------------Responsive */
 @media (max-width: 768px) {
+  .plump-header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 10px 20px 10px;
+  }
+
   .plump-title {
-    font-size: 28px;
+    font-size: 32px;
+  }
+
+  .shop-all-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .kits-scroll {
+    gap: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .kit-card {
     width: 280px;
     height: 400px;
+    margin-left: 0;
   }
 
   .kit-info {
-    max-width: 260px;
+    max-width: 100%;
+    padding: 0 10px;
   }
 
   .kit-image img {
-    height: 80%;
+    height: 75%;
   }
 }

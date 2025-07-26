@@ -1,5 +1,3 @@
-import React from 'react'
-// import Footer from './Footer/Footer'
 import HerSection from './components/indexPage/HeroSection/HeroSection'
 import ShopCards from './components/indexPage/ShopCards/ShopCards'
 import FeatureStrip from './components/indexPage/FeaturesStrip/FeatureStrip'

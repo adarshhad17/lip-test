@@ -44,13 +44,12 @@
   scroll-snap-type: x mandatory;
   padding-bottom: 10px;
 
-  /* Hide scrollbar */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
 }
 
 .card-row::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none; 
 }
 
 .card {
@@ -71,7 +70,7 @@
   display: block;
 }
 
-/* ✅ Responsive Styles */
+/* ---------mob---------------------------------- */
 @media (max-width: 768px) {
   .handle {
     font-size: 24px;
