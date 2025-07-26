@@ -18,8 +18,8 @@
 }
 
 .vip-left h2 {
-  font-size: 32px;
-  font-weight: 800;
+  font-size: 45px;
+  font-weight: 1000;
   color: #ff5500;
   margin-bottom: 10px;
 }
@@ -56,6 +56,7 @@
 }
 
 .signup-btn {
+  margin-left: 5px;
   background-color: #ff5500;
   color: white;
   font-weight: bold;
@@ -65,7 +66,7 @@
   cursor: pointer;
   font-size: 16px;
   width: 100%;
-  max-width: 300px;
+  max-width: 650px;
   margin-bottom: 10px;
   transition: 0.3s ease;
 }
@@ -77,9 +78,47 @@
 .privacy-note {
   font-size: 12px;
   color: #ff5500;
+  margin-left: 200px;
 }
 
 .privacy-note span {
   text-decoration: underline;
   cursor: pointer;
+}
+
+/* ✅ Mobile (≤480px) */
+@media (max-width: 480px) {
+  .vip-container {
+    margin-left: 10px;
+    padding: 25px 15px;
+  }
+
+  .vip-left h2 {
+    font-size: 28px;
+  }
+
+  .vip-left p {
+    font-size: 14px;
+  }
+
+  .form-inputs {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-inputs input {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .signup-btn {
+    font-size: 15px;
+    padding: 12px 30px;
+  }
+
+  .privacy-note {
+    text-align: left;
+    margin-left: 0;
+    margin-top: 5px;
+  }
 }
