@@ -11,7 +11,7 @@ const HeroSection = () => {
             Introducing the iconic fluffy whipped lip cream.
             Our most viral product is here to plump, soften, and hydrate your lips.
           </p>
-          <button className="shop-btn">SHOP NOW</button>
+          <button className="shop-btn">SHOP PLUMP & FILL</button>
         </div>
         <div className="image-section">
           <img src={heroImg} alt="hero" />

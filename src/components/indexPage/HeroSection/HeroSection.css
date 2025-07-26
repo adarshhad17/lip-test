@@ -43,17 +43,18 @@
 }
 
 .shop-btn {
-  padding: 12px 15px;
-  border: 2px solid #ff4b00;
+  width: 100%;
+  max-width: 220px;
+  padding: 5px 15px;
+  font-size: 15px;
   color: #ff4b00;
+  background: #fff;
+  border: 1px solid #f09c78;
   border-radius: 20px;
-  font-weight: 900;
-  cursor: pointer;
-  width: 250px;
-  background-color: transparent;
-  margin-top: 30px;
-  align-self: flex-start;
+  margin-top: 20px;
+  font-weight: bold;
 }
+
 
 .image-section {
   flex: 1;
