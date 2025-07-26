@@ -1,70 +1,66 @@
-.plump-container {
-  padding: 40px 20px;
-  position: relative;
+/* === Container === */
+.bestin-container {
+  padding: 40px 0;
+  margin-left: 50px;
+  background: #fefaf5;
+  overflow-x: hidden;
 }
 
-.plump-header {
+/* === Header === */
+.bestin-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
-  padding: 0 10px;
-  width: 100%;
+  margin: 0 20px 20px 20px;
 }
 
-.plump-heading {
-  font-size: 3.6rem;
-  font-weight: 1000;
+.bestin-title {
+  font-size: 3rem;
+  font-weight: 900;
   color: #ff4e00;
   margin: 0;
 }
 
-.scroll-arrow {
+.bestin-arrow {
   font-size: 1.5rem;
   border: 2px solid #ff4e00;
   color: #ff4e00;
   border-radius: 50%;
   padding: 10px 14px;
+  background: none;
   cursor: pointer;
 }
 
-/* Wrapper that cancels out padding for scroll area */
-.scroll-wrapper-outer {
-  margin-left: -20px;
-  padding-left: 0;
-  overflow-x: hidden;
-}
-
-/* Scroll wrapper */
-.plump-scroll-wrapper {
+/* === Scrollable Section === */
+.scroll-wrapper {
   overflow-x: auto;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  padding: 0;
-  margin: 0;
+  padding-left: 20px;
 }
 
-.plump-scroll-wrapper::-webkit-scrollbar {
+.scroll-wrapper::-webkit-scrollbar {
   display: none;
 }
 
-.plump-scroll {
+.scroll-content {
   display: flex;
   flex-wrap: nowrap;
-  gap: 24px;
+  gap: 28px;
   scroll-snap-type: x mandatory;
-  padding: 0;
-  margin: 0;
+  padding-bottom: 10px;
 }
 
+/* === Main Card (SHOP ALL) === */
 .main-card {
   flex: 0 0 auto;
-  width: 320px;
-  height: 550px;
+  width: 330px;
+  height: 620px;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
   scroll-snap-align: start;
+  background: #fff;
 }
 
 .main-card img {
@@ -73,7 +69,7 @@
   object-fit: cover;
 }
 
-.shop-all-btn {
+.shop-btn {
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -81,32 +77,36 @@
   background: transparent;
   color: white;
   border: 2px solid white;
-  font-weight: 700;
-  font-size: 16px;
-  padding: 12px 26px;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 14px 30px;
   border-radius: 30px;
   cursor: pointer;
 }
 
+/* === Product Cards === */
 .product-cardd {
   flex: 0 0 auto;
-  width: 280px;
+  width: 300px;
+  scroll-snap-align: start;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  scroll-snap-align: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.product-img-box {
-  width: 100%;
-  height: 420px;
-  border: 1.5px solid #ff4e00;
+.product-cardd:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.product-img {
+  border: 2px solid #ff4e00;
   border-radius: 20px;
-  background-color: white;
+  background-color: #fff;
   overflow: hidden;
 }
 
-.product-img-box img {
+.product-img img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -114,31 +114,32 @@
 
 .product-info {
   text-align: center;
-  padding: 12px 10px;
+  padding: 14px 10px;
 }
 
 .product-info h3 {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   font-weight: 800;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .product-info p {
-  font-size: 0.9rem;
-  margin: 3px 0;
+  font-size: 1rem;
+  margin: 4px 0;
 }
 
-.product-info .price {
+.price {
   color: #ff4e00;
   font-weight: bold;
-  font-size: 0.95rem;
-  margin-top: 5px;
+  font-size: 1rem;
+  margin-top: 6px;
 }
 
+/* === Dot Indicator === */
 .dots {
   display: flex;
   justify-content: center;
-  margin-top: 6px;
+  margin-top: 8px;
   gap: 6px;
 }
 
@@ -149,26 +150,42 @@
   border-radius: 50%;
 }
 
-/* Responsive */
+.dot.more {
+  background-color: transparent;
+  color: #ff4e00;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+/* === Responsive === */
 @media (max-width: 768px) {
-  .plump-heading {
+  .bestin-title {
     font-size: 1.6rem;
   }
 
-  .scroll-arrow {
+  .bestin-arrow {
     display: none;
+  }
+
+  .scroll-content {
+    gap: 16px;
   }
 
   .main-card,
   .product-cardd {
-    width: 80vw;
+    width: 85vw;
   }
 
-  .product-img-box {
-    height: 400px;
+  .main-card {
+    height: 620px;
   }
 
-  .shop-all-btn {
+  .product-img {
+    height: 600px !important;
+  }
+
+  .shop-btn {
     font-size: 14px;
     padding: 10px 18px;
   }

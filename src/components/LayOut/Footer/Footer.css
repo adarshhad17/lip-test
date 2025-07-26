@@ -60,7 +60,7 @@
   color: #ffe5d0;
 }
 
-/* Mobile responsive */
+/* ✅ Tablet View (already present) */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
@@ -70,5 +70,29 @@
   .footer-social {
     margin-top: 2rem;
     justify-content: flex-start;
+  }
+}
+
+/* ✅ Mobile View Enhancements */
+@media (max-width: 480px) {
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .footer-title {
+    font-size: 0.9rem;
+  }
+
+  .footer-section li {
+    font-size: 0.9rem;
+  }
+
+  .footer-social {
+    font-size: 1.5rem;
+    gap: 1rem;
+  }
+
+  .footer-section {
+    flex: 1 1 100%;
   }
 }

@@ -1,27 +1,20 @@
-import React from "react";
-import "./HeroSection.css";
-import modelImg from "../../../assets/Hero.webp";
+import './HeroSection.css';
+import heroImg from '../../../assets/Hero.webp'; // update path to your image
 
 const HeroSection = () => {
   return (
     <div className="hero-container">
       <div className="hero-content">
-        {/* Left Side: Text */}
         <div className="text-section">
-          <h1>
-            BIG LIPS,<br />
-            BIGGER ENERGY
-          </h1>
+          <h1>FLUFFY IS BACK</h1>
           <p>
-            Our famous lip liner lines, fills and plumps so you can cheat <br />
-            your way to an instant lip lift.
+            Introducing the iconic fluffy whipped lip cream.
+            Our most viral product is here to plump, soften, and hydrate your lips.
           </p>
-          <button className="shop-btn">SHOP PLUMP & FILL</button>
+          <button className="shop-btn">SHOP NOW</button>
         </div>
-
-        {/* Right Side: Image */}
         <div className="image-section">
-          <img src={modelImg} alt="Model" />
+          <img src={heroImg} alt="hero" />
         </div>
       </div>
     </div>

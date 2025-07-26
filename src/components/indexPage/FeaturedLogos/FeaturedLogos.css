@@ -56,41 +56,37 @@
 }
 
 /* ✅ Responsive adjustments */
-@media (max-width: 768px) {
+
+@media (max-width: 480px) {
+  .featured-section {
+    padding: 30px 15px;
+  }
+
+  .featured-title {
+    font-size: 16px;
+  }
+
   .logo-grid {
-    gap: 30px 30px;
+    gap: 20px;
   }
 
   .logo-text {
-    font-size: 22px;
-  }
-
-  .mailonline .mail {
-    font-size: 24px;
-  }
-
-  .mailonline .online {
-    font-size: 22px;
-  }
-
-  .thismorning .this {
     font-size: 18px;
   }
 
-  .thismorning .morning {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 480px) {
-  .logo-text {
-    font-size: 20px;
+  .mailonline .mail {
+    font-size: 18px;
   }
 
-  .mailonline .mail,
-  .mailonline .online,
-  .thismorning .this,
+  .mailonline .online {
+    font-size: 16px;
+  }
+
+  .thismorning .this {
+    font-size: 16px;
+  }
+
   .thismorning .morning {
-    font-size: 20px;
+    font-size: 18px;
   }
 }

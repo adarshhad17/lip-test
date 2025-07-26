@@ -1,10 +1,70 @@
+/* === Top Proven Section === */
+.proven-section {
+  text-align: center;
+  padding: 4rem 1rem;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.proven-heading {
+  font-size: 3rem;
+  color: #ff471a;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.proven-description {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.proven-button {
+  background-color: transparent;
+  color: #ff471a;
+  border: 2px solid #ff471a;
+  padding: 0.6rem 2rem;
+  width: 300px;
+  font-weight: bold;
+  border-radius: 999px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.proven-button:hover {
+  background-color: #ff471a;
+  color: #fff;
+}
+
+/* Responsive heading */
+@media (max-width: 768px) {
+  .proven-heading {
+    font-size: 2.2rem;
+  }
+
+  .proven-description {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .proven-button {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* === Product Card Section === */
+
 /* Static (non-scroll) container */
 .static-wrapper {
   display: flex;
   justify-content: center;
   gap: 2.5rem;
   padding: 2rem;
-  flex-wrap: wrap; /* Responsive for small screens */
+  flex-wrap: wrap;
   box-sizing: border-box;
 }
 
@@ -27,7 +87,6 @@
   top: 0;
   left: 0;
   z-index: 0;
-
 }
 
 /* Left trending card content */
@@ -51,7 +110,6 @@
   padding: 0.4rem 1rem;
   border-radius: 999px;
   width: fit-content;
-  
   text-transform: uppercase;
 }
 
@@ -63,7 +121,7 @@
 }
 
 /* Right product image - no overlay */
-.product-img {
+.product-imgg {
   width: 100%;
   height: 50%;
   object-fit: contain;
@@ -75,7 +133,9 @@
   margin-top: 60px;
   padding: 0 1rem;
   margin-left: 20px;
-  display: flex bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .product-title {
@@ -109,4 +169,23 @@
 .add-to-cart:hover {
   background-color: #ff471a;
   color: white;
+}
+
+/* Optional Responsive Adjustments */
+@media (max-width: 768px) {
+  .product-card {
+    width: 100%;
+    height: 300px;
+    flex-direction: column;
+  }
+
+  .product-imgg {
+    height: 100%;
+  }
+
+  .right-product-content {
+    margin-top: 1rem;
+    margin-left: 0;
+    padding: 1rem;
+  }
 }

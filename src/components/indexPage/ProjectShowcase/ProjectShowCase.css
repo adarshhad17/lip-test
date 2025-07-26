@@ -70,3 +70,40 @@
   object-fit: cover;
   display: block;
 }
+
+/* ✅ Responsive Styles */
+@media (max-width: 768px) {
+  .handle {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+
+  .follow-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin-right: 10px;
+  }
+
+  .card {
+    width: 200px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .handle {
+    font-size: 20px;
+    margin-left: 8px;
+  }
+
+  .follow-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+    margin-right: 8px;
+  }
+
+  .card {
+    width: 180px;
+    height: 280px;
+  }
+}
